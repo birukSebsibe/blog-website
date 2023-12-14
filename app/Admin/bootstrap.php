@@ -17,5 +17,9 @@
  * Admin::js('/packages/prettydocs/js/main.js');
  *
  */
+Use OpenAdmin\Admin\Admin;
+
+Admin::favicon('img/logo.png');
 
 OpenAdmin\Admin\Form::forget(['editor']);
+

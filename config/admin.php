@@ -65,6 +65,8 @@ return [
         'middleware' => ['web', 'admin'],
     ],
 
+    
+
     /*
     |--------------------------------------------------------------------------
     | Open-admin install directory
@@ -410,6 +412,11 @@ return [
     |
     */
     'extensions' => [
+        'log-viewer' => [
+            'bypass_protected_urls' => true,
+            //'bypass_protected_urls_find' => ['.'],          // default ['.']
+            //'bypass_protected_urls_replace' => ['[dot]'],   // default ['[dot]']
+        ]
 
     ],
 ];

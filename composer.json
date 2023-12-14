@@ -6,13 +6,23 @@
     "license": "MIT",
     "require": {
         "php": "^7.3|^8.0",
+        "almasaeed2010/adminlte": "~3.0",
+        "auth0/auth0-php": "*",
+        "caouecs/laravel-lang": "*",
+        "erlandmuchasaj/laravel-file-uploader": "*",
         "fruitcake/laravel-cors": "^2.0",
+        "genealabs/laravel-caffeine": "*",
         "guzzlehttp/guzzle": "^7.0.1",
+        "jeroennoten/laravel-adminlte": "*",
         "laravel/framework": "^8.75",
         "laravel/sanctum": "^2.11",
         "laravel/tinker": "^2.5",
+        "laravel/ui": "*",
+        "maatwebsite/excel": "*",
         "open-admin-ext/helpers": "^1.0",
-        "open-admin-org/open-admin": "^1.0"
+        "open-admin-ext/log-viewer": "^1.0",
+        "open-admin-org/open-admin": "^1.0",
+        "symfony/flex": "*"
     },
     "require-dev": {
         "facade/ignition": "^2.5",
@@ -57,8 +67,12 @@
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "symfony/flex": true
+        }
     },
     "minimum-stability": "dev",
     "prefer-stable": true
+    
 }
