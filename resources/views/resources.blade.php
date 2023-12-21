@@ -162,7 +162,7 @@ nav bar -->
     @foreach ($resources as $r)
     <div class="card">
         <div class="card-body">
-            <h5 class="card-title">{{ $r->name }}</h5>
+            <h4 class="card-title">{{ $r->name }}</h4>
             <p class="card-text">{{ $r->description }}</p>
             <p class="card-text"><small class="text-muted">{{ $r->created_at }}</small></p>
             <a href="{{ url('download2/'.$r->id) }}" class="btn btn-primary">Download</a>

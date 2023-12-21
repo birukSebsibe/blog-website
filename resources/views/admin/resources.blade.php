@@ -70,6 +70,7 @@
     <th scope="col">#</th>
       <th scope="col">File</th>
       <th scope="col">Description</th>
+      <th scope="col">Description in Amharic</th>
       <th scope="col">Download</th>
       <th scope="col">Delete</th>
       
@@ -82,6 +83,7 @@
       <th scope="row">{{ $r->id }}</th>
       <td>{{ $r->name }}</td>
       <td>{{ $r->description }} </td>
+      <td>{{ $r->descriptionAmh }} </td>
       <td><a href="{{url('download/'.$r->id)}}">
       <i class="fa fa-download" style="font-size:30px"></i>
       <td><form action="/r-delete/{{ $r->id }}" method="POST">

@@ -92,7 +92,7 @@ Route::any('search',function(){
 
 
 
-Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function () {
+
     Route::get('/admin', [AdminAuthController::class, 'getLogin'])->name('adminLogin');
     Route::post('/login', [AdminAuthController::class, 'postLogin'])->name('adminLoginPost');
     Route::get('/logout', [AdminAuthController::class, 'adminLogout'])->name('adminLogout');
@@ -105,7 +105,7 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function () {
 
     });
 
-});
+
 
 
 
